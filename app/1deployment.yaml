@@ -4,7 +4,7 @@ metadata:
   name: hello-node-app  
   namespace: hello 
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: hello-node-app
@@ -16,7 +16,7 @@ spec:
       resource: 
       containers:
         - name: hello-node-app
-          image: registry.k8s.io/e2e-test-images/agnhost:latest
+          image: registry.k8s.io/e2e-test-images/agnhost
           ports:
           - containerPort: 8080
             protocol: TCP
