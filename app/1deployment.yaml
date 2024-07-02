@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: hello-node-app  
+  namespace: hello 
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: hello-node-app
+  template:
+    metadata:
+      labels:
+        app: hello-node-app
+    spec:
+      resource: 
+      containers:
+        - name: hello-node-app
+          image: registry.k8s.io/e2e-test-images/agnhost:2.39
+          ports:
+          - containerPort: 8080
+            protocol: TCP
