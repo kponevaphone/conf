@@ -19,5 +19,5 @@ spec:
           # image: registry.k8s.io/e2e-test-images/agnhost
           image: httpd
           ports:
-          - containerPort: 8080
+          - containerPort: 80
             protocol: TCP
