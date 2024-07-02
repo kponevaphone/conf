@@ -17,7 +17,7 @@ spec:
       containers:
         - name: hello-node-app
           # image: registry.k8s.io/e2e-test-images/agnhost
-          image: nginxdemos/hello 
+          image: httpd
           ports:
           - containerPort: 8080
             protocol: TCP
