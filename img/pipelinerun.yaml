@@ -20,8 +20,14 @@ spec:
   - name: docker-credentials
     secret:
       secretName: docker-credentials
+  - name: git-credentials
+    secret:
+      secretName: git-credentials
   params:
   - name: repo-url
-    value: https://github.com/google/docsy-example.git
+    # value: https://github.com/google/docsy-example.git
+    value: git@github.com:kponevaphone/conf.git
   - name: image-reference
-    value: container.registry.com/sublocation/my_app:version
+    # value: container.registry.com/sublocation/my_app:version 
+    value: devubu:5000/test:latest 
+      
