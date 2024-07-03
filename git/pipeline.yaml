@@ -28,6 +28,8 @@ spec:
     params:
     - name: url
       value: $(params.repo-url)
+    - name: revision
+      value: test
   - name: show-readme
     runAfter: ["fetch-source"]
     taskRef:
