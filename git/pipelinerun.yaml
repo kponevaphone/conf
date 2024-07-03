@@ -23,3 +23,5 @@ spec:
   params:
   - name: repo-url
     value: git@github.com:kponevaphone/conf.git
+  - name: revision
+    value: test
