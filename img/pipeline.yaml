@@ -39,3 +39,8 @@ spec:
     params:
     - name: IMAGE
       value: $(params.image-reference)
+    # - name: DOCKERFILE 
+      # value: $(params.image-reference)
+    - name: DOCKERFILE
+      description: Path to the Dockerfile to build.
+      default: $(workspaces.source.path)/doc/Dockerfile

@@ -30,6 +30,3 @@ spec:
   - name: image-reference
     # value: container.registry.com/sublocation/my_app:version 
     value: devubu:5000/test:latest 
-  - name: DOCKERFILE
-    description: Path to the Dockerfile to build.
-    value: $(workspaces.source.path)/doc/Dockerfile
