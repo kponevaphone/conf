@@ -32,4 +32,4 @@ spec:
     value: devubu:5000/test:latest 
   - name: DOCKERFILE
     description: Path to the Dockerfile to build.
-    default: $(workspaces.source.path)/doc/Dockerfile
+    value: $(workspaces.source.path)/doc/Dockerfile
