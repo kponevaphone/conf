@@ -25,10 +25,8 @@ spec:
       secretName: git-credentials
   params:
   - name: repo-url
-    # value: https://github.com/google/docsy-example.git
     value: git@github.com:kponevaphone/conf.git
   - name: revision
     value: test
   - name: image-reference
-    # value: container.registry.com/sublocation/my_app:version 
     value: devubu:5000/test:latest 
