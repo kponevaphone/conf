@@ -27,6 +27,8 @@ spec:
     params:
     - name: url
       value: $(params.repo-url)
+    - name: revision
+      value: test
   - name: build-push
     runAfter: ["fetch-source"]
     taskRef:
@@ -39,5 +41,5 @@ spec:
     params:
     - name: IMAGE
       value: $(params.image-reference)
-    # - name: DOCKERFILE
-      # value: $(workspaces.source.path)/doc/Dockerfile
+    - name: DOCKERFILE
+      value: $(workspaces.source.path)/doc/Dockerfile
